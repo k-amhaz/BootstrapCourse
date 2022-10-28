@@ -1,12 +1,39 @@
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
+  --red: #dc3545;
+  --yellow: #ffc107;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.main-title {
+  padding-top: 3rem;
+}
+.main-title img {
+  margin: 2rem 0;
+}
+.main-title p {
+  position: relative;
+}
+.main-title p::after {
+  content: "";
+  height: 3px;
+  width: 150px;
+  background-color: var(--green-color);
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 3;
+  top: 35px;
+}
+
 .navbar {
   background-color: var(--dark-color);
+  height: 80px;
+}
+.navbar-toggler > i:hover {
+  color: var(--green-color) !important;
 }
 .navbar .navbar-nav .nav-link {
   color: white;
@@ -23,4 +50,12 @@ body {
 }
 .navbar-collapse .search i {
   color: var(--green-color);
+}
+.landing {
+  background-color: var(--dark-color);
+  height: calc(100vh - 80px);
+}
+.features {
+  background-color: #eff7fa;
+  min-height: 100vh;
 }
