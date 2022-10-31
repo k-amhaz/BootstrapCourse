@@ -30,7 +30,7 @@ body {
 
 .navbar {
   background-color: var(--dark-color);
-  height: 80px;
+  height: 70px;
 }
 .navbar-toggler > i:hover {
   color: var(--green-color) !important;
@@ -53,7 +53,7 @@ body {
 }
 .landing {
   background-color: var(--dark-color);
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 .features {
   background-color: #eff7fa;
